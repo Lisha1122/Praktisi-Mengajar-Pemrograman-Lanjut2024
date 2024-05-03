@@ -17,8 +17,7 @@ public class Dequeue {
         numbers.offerLast(1);
         numbers.offerLast(2);
         numbers.offerLast(3);
-        while (!numbers.isEmpty()) {
-            int next = numbers.pollLast();
+        for (Integer next : numbers) {
             System.out.println(next);
         }
     }
