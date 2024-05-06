@@ -1,4 +1,4 @@
-                                JAVA COLLECTION
+                               JAVA COLLECTION
 
 A. Pengenalan Collection
 
