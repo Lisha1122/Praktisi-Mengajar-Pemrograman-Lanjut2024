@@ -145,22 +145,17 @@ public class Dequeue {
 - Karena HashMap sangat bergantung dengan hashCode() function, jadi pastikan kita harus membuat function hashCode seunik mungkin, karena jika terlalu banyak nilai hashCode() yang sama, maka pendistribusian key nya tidak akan optimal sehingga proses get data di Map akan semakin lambat
 - Di HashMap pengecekan data duplikat dilakukan dengan menggunakan method equals nya
 
-## Kode Dequ
+## Kode Hasmap
 ```sh
-import java.util.Deque;
-import java.util.ArrayDeque;
+import java.util.HashMap;
+import java.util.Map;
 
-
-public class Dequeue {
-      public static void main(String[] args) {
-        Deque<Integer> numbers = new ArrayDeque<>();
-        numbers.offerLast(1);
-        numbers.offerLast(2);
-        numbers.offerLast(3);
-        while (!numbers.isEmpty()) {
-            int next = numbers.pollLast();
-            System.out.println(next);
-        }
+public class hashmapClass {
+    public static void main(String[] args) {
+        Map<String, String> map = new HashMap<>();
+        map.put("longName", "Lisha Khaerunniswah");
+        
+        System.out.println(map.get("longName"));
     }
 }
 ```
